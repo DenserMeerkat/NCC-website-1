@@ -1,0 +1,77 @@
+
+  :root {
+    --primary-color: 240, 240, 240;
+    --secondary-color: 25, 25, 25;
+    --ncc-light-blue: 0, 174, 239;
+    --ncc-deep-blue: 46, 48, 146;
+    --ncc-red: 239, 28, 36;
+    --text-color: 5, 5, 5;
+    --white: 245,245,245;
+    --black: 10,10,10;
+    --grey: 110, 110, 110;
+  }
+
+  main {
+    height: max-content;
+    flex-direction: column;
+  }
+
+  .hero{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+.achievement{
+    flex: 3 1 300px;
+    min-width: 300px;
+    max-width: 600px;
+    height:64.5vh;
+    background-color:rgba(var(--ncc-deep-blue),0.6); 
+    overflow:hidden;
+  }
+  .achievement ul{
+    list-style:none;
+    position:relative;
+  }
+  .achievement li{
+    margin: unset;
+    display: flex;
+    flex-direction: column;
+    height:120px;
+    background-color:rgba(var(--ncc-deep-blue),0.6); 
+    text-align:center;
+    border-bottom:1px solid rgba(var(--white),1);
+  }
+  .achievement h3{
+    color:rgba(var(--white),1);
+    padding-top:10px;
+  }
+  .achievement p{
+    text-align:left;
+    padding:10px;
+    color:rgba(var(--white),1);
+    display: block;/* or inline-block */
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 3.5em;
+    line-height: 1em;
+    /* overflow:hidden;
+    text-overflow:ellipsis;
+    display: -webkit-box;
+   -webkit-line-clamp: 2; 
+           line-clamp: 2; 
+   -webkit-box-orient: vertical;
+    white-space: nowrap; */
+   }
+
+   /*#########################################___RESPONSIVENESS____#####################################*/
+
+@media only screen and (max-width:  1400px) {
+    .hero{
+        padding-bottom: 20px;
+        height: max-content;
+      }
+}
